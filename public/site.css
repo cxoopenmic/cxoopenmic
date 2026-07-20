@@ -143,8 +143,17 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .card-copy h3 { margin: 0 0 .6rem; font-size: 1.65rem; letter-spacing: -.035em; }
 .card-copy p { max-width: 360px; margin: 0 0 1.5rem; color: rgba(255,255,255,.62); font-size: .92rem; }
 .card-link { font-size: .78rem; font-weight: 700; display: inline-flex; gap: .5rem; border-bottom: 1px solid currentColor; padding-bottom: .15rem; }
-.card-ciso { background: #242127; color: white; }
-.card-caio { background: #72002d; color: white; }
+.card-ciso {
+  background:
+    radial-gradient(circle at 50% 31%, #bf5700 0%, #823b00 36%, #391a00 70%, #200f00 100%);
+  color: white;
+}
+.card-caio {
+  background:
+    radial-gradient(circle at 50% 31%, #df0053 0%, #820030 38%, #390015 72%, #20000c 100%);
+  color: white;
+}
+.card-ciso .card-topline, .card-caio .card-topline { text-shadow: 0 1px 12px rgba(0,0,0,.38); }
 .card-next { background: #e9e3d9; }
 .card-next .card-copy p { color: #686167; }
 .next-list { display: flex; flex-wrap: wrap; gap: .55rem; margin: auto 0; }
