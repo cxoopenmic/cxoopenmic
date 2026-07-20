@@ -136,13 +136,15 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .community-card { min-height: 610px; padding: 1.5rem; display: flex; flex-direction: column; overflow: hidden; position: relative; border-right: 1px solid var(--line); }
 .community-card:last-child { border-right: 0; }
 .card-topline { position: relative; z-index: 2; display: flex; justify-content: space-between; font-size: .69rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
-.card-monogram { margin: auto -2rem; font-size: clamp(6rem, 10vw, 11rem); font-weight: 700; letter-spacing: -.09em; line-height: 1; color: rgba(255,255,255,.11); transform: rotate(-90deg); }
+.card-logo-wrap { flex: 1; min-height: 290px; display: grid; place-items: center; padding: 1.6rem 0; }
+.card-logo-wrap img { width: min(72%, 300px); height: auto; filter: drop-shadow(0 22px 34px rgba(0,0,0,.28)); transition: transform .35s ease, filter .35s ease; }
+.community-card:hover .card-logo-wrap img { transform: translateY(-5px) scale(1.025); filter: drop-shadow(0 28px 42px rgba(0,0,0,.36)); }
 .card-copy { position: relative; z-index: 2; margin-top: auto; }
 .card-copy h3 { margin: 0 0 .6rem; font-size: 1.65rem; letter-spacing: -.035em; }
 .card-copy p { max-width: 360px; margin: 0 0 1.5rem; color: rgba(255,255,255,.62); font-size: .92rem; }
 .card-link { font-size: .78rem; font-weight: 700; display: inline-flex; gap: .5rem; border-bottom: 1px solid currentColor; padding-bottom: .15rem; }
 .card-ciso { background: #242127; color: white; }
-.card-caio { background: #6d3d91; color: white; }
+.card-caio { background: #72002d; color: white; }
 .card-next { background: #e9e3d9; }
 .card-next .card-copy p { color: #686167; }
 .next-list { display: flex; flex-wrap: wrap; gap: .55rem; margin: auto 0; }
