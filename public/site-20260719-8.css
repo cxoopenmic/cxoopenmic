@@ -172,15 +172,20 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .principle-list p { margin: 0; color: rgba(255,255,255,.55); max-width: 470px; }
 
 .partners { background: var(--paper); }
-.partners-card { position: relative; overflow: hidden; min-height: 590px; padding: 3.3rem; border: 1px solid var(--line); display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; align-content: center; }
-.partners-card::before { content: ""; position: absolute; width: 520px; height: 520px; border: 1px solid rgba(109,61,145,.25); border-radius: 50%; right: -155px; bottom: -240px; box-shadow: 0 0 0 70px rgba(109,61,145,.035), 0 0 0 140px rgba(109,61,145,.025); }
-.partners-copy { position: relative; z-index: 1; }
-.partners-copy p { max-width: 650px; margin: 2rem 0 0; color: #655f68; font-size: 1.08rem; }
-.partner-actions { margin-top: 2.3rem; display: flex; gap: 1.4rem; align-items: center; }
-.button-dark { background: var(--ink); color: white; }
-.text-link-dark { border-color: rgba(23,21,26,.25); }
-.partner-stamp { position: absolute; right: 3rem; top: 3rem; width: 142px; aspect-ratio: 1; border: 1px solid rgba(109,61,145,.3); border-radius: 50%; display: grid; place-items: center; align-content: center; color: var(--purple); text-align: center; font-size: .61rem; letter-spacing: .12em; text-transform: uppercase; transform: rotate(7deg); }
-.partner-stamp strong { font-size: 1.25rem; line-height: 1.5; }
+.partners-card { min-height: 440px; padding: 3.75rem; display: grid; grid-template-columns: .72fr 1.28fr; gap: 4.5rem; background: var(--purple); color: white; }
+.partner-intro { display: flex; flex-direction: column; justify-content: space-between; }
+.partner-intro .section-label { color: rgba(255,255,255,.62); }
+.partner-intro .section-label span { color: white; }
+.partner-intro > p { max-width: 330px; margin: 5rem 0 0; color: rgba(255,255,255,.78); font-size: 1.2rem; line-height: 1.5; }
+.partners-copy { padding-left: 4.5rem; border-left: 1px solid rgba(255,255,255,.25); }
+.partners .partners-copy h2 { max-width: 760px; font-size: clamp(3rem, 4.8vw, 5.4rem); line-height: .94; color: white; }
+.partners-copy > p { max-width: 700px; margin: 1.5rem 0 0; color: rgba(255,255,255,.72); font-size: 1.02rem; }
+.partner-principles { max-width: 700px; list-style: none; margin: 2rem 0 2.25rem; padding: 0; border-top: 1px solid rgba(255,255,255,.22); }
+.partner-principles li { display: grid; grid-template-columns: 42px 1fr; gap: .8rem; padding: .72rem 0; border-bottom: 1px solid rgba(255,255,255,.22); font-size: .88rem; font-weight: 600; }
+.partner-principles span { color: #dfc4ef; font-size: .72rem; font-weight: 800; letter-spacing: .05em; }
+.partner-actions { display: flex; gap: 1.4rem; align-items: center; }
+.button-partner { background: white; color: var(--purple); }
+.button-partner:hover { background: var(--paper-bright); }
 
 .site-footer { background: #111014; color: white; padding: 5.5rem max(32px, calc((100vw - 1320px) / 2)) 2rem; }
 .footer-main { min-height: 265px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4rem; }
@@ -209,7 +214,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .community-card:nth-child(2) { border-right: 0; }
   .community-card:last-child { grid-column: 1 / -1; border-top: 1px solid var(--line); min-height: 430px; }
   .format { grid-template-columns: 1fr; gap: 4rem; }
-  .partners-card { grid-template-columns: 1fr; padding-top: 7.5rem; }
+  .partners-card { grid-template-columns: 1fr; gap: 3rem; }
+  .partner-intro > p { margin-top: 3rem; }
+  .partners-copy { padding: 3rem 0 0; border-left: 0; border-top: 1px solid rgba(255,255,255,.25); }
 }
 
 @media (max-width: 680px) {
@@ -236,9 +243,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .format h2 { font-size: clamp(3.7rem, 18vw, 5.5rem); }
   .principle-list li { grid-template-columns: 70px 1fr; }
   .principle-number { font-size: 2rem; }
-  .partners-card { min-height: 660px; padding: 7.8rem 1.25rem 2rem; }
-  .partner-stamp { top: 1.4rem; right: 1.4rem; width: 115px; }
-  .partner-actions { flex-direction: column; align-items: flex-start; }
+  .partners-card { min-height: 0; padding: 2rem 1.25rem 2.25rem; }
+  .partners .partners-copy h2 { font-size: clamp(2.7rem, 13vw, 4rem); }
   .site-footer { padding: 4rem 20px 1.5rem; }
   .footer-main { grid-template-columns: 1fr; gap: 2rem; padding-bottom: 3.5rem; }
   .footer-main nav { justify-self: start; align-items: flex-start; }
