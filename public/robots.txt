@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cxoopenmic.com/sitemap.xml
