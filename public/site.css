@@ -122,12 +122,12 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .section-pad { padding: 8rem max(32px, calc((100vw - 1320px) / 2)); }
 .section-label { display: flex; gap: .8rem; align-items: center; color: #655f68; font-size: .7rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
 .section-label span { color: var(--purple); }
-.manifesto { display: grid; grid-template-columns: minmax(170px, .8fr) minmax(0, 3.2fr); align-items: start; gap: 4rem; padding-top: 6.5rem; padding-bottom: 6.5rem; border-bottom: 1px solid var(--line); }
+.manifesto { display: grid; grid-template-columns: minmax(170px, .8fr) minmax(0, 3.2fr); align-items: start; gap: 4rem; padding-top: 5.5rem; padding-bottom: 5.5rem; border-bottom: 1px solid var(--line); }
 .manifesto > .section-label { align-self: start; padding-top: .55rem; }
-.manifesto-copy { max-width: 960px; }
-.display-copy { margin: 0; font-size: clamp(2.7rem, 4.15vw, 4.6rem); line-height: 1; letter-spacing: -.045em; }
+.manifesto-copy { max-width: 900px; }
+.display-copy { margin: 0; font-size: clamp(2.5rem, 3.45vw, 3.9rem); line-height: 1.03; letter-spacing: -.042em; }
 .display-copy em { font-family: var(--serif); color: var(--purple); font-weight: 400; }
-.body-copy { max-width: 560px; margin: 2.4rem 0 0 auto; color: #5e5861; font-size: clamp(1rem, 1.25vw, 1.16rem); }
+.body-copy { max-width: 590px; margin: 2rem 0 0 min(18%, 160px); color: #5e5861; font-size: clamp(.98rem, 1.1vw, 1.08rem); }
 
 .communities { background: var(--paper-bright); }
 .section-heading { display: grid; grid-template-columns: 1fr 3fr; gap: 4rem; margin-bottom: 4.2rem; }
@@ -224,10 +224,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 1.2rem; }
   .hero-mark { width: 360px; right: -175px; bottom: 45px; }
   .section-pad { padding: 5.5rem 20px; }
-  .manifesto { gap: 2.2rem; padding-top: 4.8rem; padding-bottom: 4.8rem; }
+  .manifesto { gap: 2rem; padding-top: 4.25rem; padding-bottom: 4.25rem; }
   .manifesto > .section-label { padding-top: 0; }
-  .display-copy { font-size: clamp(2.4rem, 10.5vw, 3.55rem); }
-  .body-copy { margin-top: 2rem; }
+  .display-copy { font-size: clamp(2.2rem, 9.4vw, 3rem); }
+  .body-copy { margin: 1.65rem 0 0; }
   .section-heading { margin-bottom: 2.8rem; }
   .section-heading h2, .partners h2 { font-size: clamp(3.1rem, 16vw, 4.7rem); }
   .community-grid { grid-template-columns: 1fr; }
