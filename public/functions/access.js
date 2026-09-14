@@ -1,8 +1,10 @@
 const CRM_ACCESS_PATH = "/crm/access";
+const PLATFORM_ORIGIN = "https://cxoopenmic.com";
 
 async function proxyAccess(request) {
-  const upstreamUrl = new URL(request.url);
-  upstreamUrl.pathname = CRM_ACCESS_PATH;
+  const requestUrl = new URL(request.url);
+  const upstreamUrl = new URL(CRM_ACCESS_PATH, PLATFORM_ORIGIN);
+  upstreamUrl.search = requestUrl.search;
 
   const upstreamRequest = new Request(upstreamUrl, request);
   const response = await fetch(upstreamRequest);
