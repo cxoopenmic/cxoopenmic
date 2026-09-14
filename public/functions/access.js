@@ -1,5 +1,5 @@
 const CRM_ACCESS_PATH = "/crm/access";
-const PLATFORM_ORIGIN = "https://cxoopenmic.com";
+const PLATFORM_ORIGIN = "https://crm-worker.cxoopenmic.workers.dev";
 
 async function proxyAccess(request) {
   const requestUrl = new URL(request.url);
