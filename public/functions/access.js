@@ -9,8 +9,11 @@ async function proxyAccess(request) {
   const upstreamRequest = new Request(upstreamUrl, request);
   const response = await fetch(upstreamRequest);
   const headers = new Headers(response.headers);
-  headers.set("Cache-Control", "no-store");
+  headers.set("Cache-Control", "private, no-store, max-age=0");
+  headers.set("Cloudflare-CDN-Cache-Control", "no-store");
   headers.set("Content-Location", "/access");
+  headers.append("Vary", "Cookie");
+  headers.append("Vary", "Authorization");
 
   return new Response(response.body, {
     status: response.status,
@@ -32,7 +35,8 @@ export function onRequest() {
     status: 405,
     headers: {
       "Allow": "GET",
-      "Cache-Control": "no-store"
+      "Cache-Control": "private, no-store, max-age=0",
+      "Cloudflare-CDN-Cache-Control": "no-store"
     }
   });
 }
