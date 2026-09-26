@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.cxoopenmic.flightwall",
+      "sha256_cert_fingerprints": [
+        "11:BC:26:F5:EC:07:45:BC:8F:59:85:CC:26:0E:B0:EA:34:E1:85:FB:87:5E:21:F5:18:2D:EB:DE:58:74:93:EA"
+      ]
+    }
+  }
+]
