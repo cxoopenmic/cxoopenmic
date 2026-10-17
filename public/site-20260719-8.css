@@ -261,3 +261,13 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .products{background:#111612;color:#faf7ef}.products .section-label{color:#c6b1d8}.products .section-heading p{color:#bdc5bd}.product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.product-card{--product-accent:#9dc8ed;display:flex;flex-direction:column;border:1px solid #3b443c;padding:32px;transition:border-color .2s,transform .2s}.product-card:hover{border-color:var(--product-accent);transform:translateY(-4px)}.product-amplify{--product-accent:#ffa143}.product-resonance{--product-accent:#c4d49b}.product-stage{color:var(--product-accent);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em}.product-icon{font-size:5rem;line-height:1.4;color:var(--product-accent)}.product-card h3{font-size:2.5rem;letter-spacing:-.05em;margin:0 0 12px}.product-card h4{font-size:1.1rem;line-height:1.4;margin:0 0 16px}.product-card p{color:#bdc5bd;font-size:.9rem;margin:0 0 24px}.product-output{font-size:.7rem;color:#bdc5bd;margin-top:auto;padding-bottom:20px}.product-link{font-size:.8rem;color:var(--product-accent);border-top:1px solid #3b443c;padding-top:18px}.product-cycle{max-width:760px;margin:36px 0 0;color:#bdc5bd}.desktop-nav{gap:1.5rem}
 @media(max-width:1000px){.nav-shell{height:auto;min-height:96px;grid-template-columns:1fr auto;padding:18px 0;row-gap:16px}.desktop-nav{display:flex;grid-column:1/-1;grid-row:2;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.8rem}.hero{padding-top:180px}.product-grid{grid-template-columns:1fr}.product-card{padding:28px}.product-icon{font-size:3.5rem}.product-card h3{font-size:2.5rem}}
 @media(prefers-reduced-motion:reduce){.product-card{transition:none}.product-card:hover{transform:none}}
+
+/* Keep the mobile hero artwork and signature below the copy, in normal flow. */
+@media(max-width:1000px){
+  .hero{row-gap:32px;padding-bottom:36px}
+  .hero-mark{position:relative;right:auto;bottom:auto;width:min(100%,320px);justify-self:center;opacity:1;margin:0}
+  .hero-mark .signal{display:none}
+  .hero-footer{position:relative;bottom:auto;left:auto;display:flex;flex-wrap:wrap;justify-content:center;gap:12px 20px;width:100%;padding-top:24px;border-top:1px solid rgba(255,255,255,.16);font-size:.65rem;letter-spacing:.08em;color:rgba(255,255,255,.7)}
+  .hero-footer span{white-space:nowrap}
+  .hero-footer span+span::before{content:none}
+}
