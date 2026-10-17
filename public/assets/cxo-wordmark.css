@@ -1,0 +1,4 @@
+/* Match the homepage wordmark without changing the product header layout. */
+.header .brand{display:inline-flex;align-items:center;gap:.8rem;font-family:"Open Sans",Arial,sans-serif;font-size:16px;font-weight:600;letter-spacing:-.02em;line-height:1.55;text-decoration:none;white-space:nowrap}
+.header .brand strong{font-weight:800}
+.header .brand img{display:block;width:48px;height:48px;max-width:100%;flex:none;border-radius:0;object-fit:contain}
