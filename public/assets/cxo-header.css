@@ -1,0 +1,15 @@
+/* Shared site header. Product navigation is a separate secondary row. */
+.cxo-header{position:relative;z-index:20;width:100%;background:#17151a;color:#fff;font-family:"Open Sans",Arial,sans-serif;font-size:16px;line-height:1.55}
+.cxo-header *{box-sizing:border-box}
+.cxo-home .cxo-header{position:absolute;inset:0 0 auto}
+.cxo-header-inner{width:min(1440px,calc(100% - 64px));min-height:96px;margin:auto;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px;border-bottom:1px solid #ffffff29}
+.cxo-header a{color:#fff;text-decoration:none}
+.cxo-header a:focus-visible,.cxo-product-nav a:focus-visible{outline:3px solid #b88ddd;outline-offset:4px}
+.cxo-wordmark{display:inline-flex;align-items:center;gap:.8rem;font-size:16px;font-weight:600;letter-spacing:-.02em;white-space:nowrap}
+.cxo-wordmark strong{font-weight:800}.cxo-wordmark img{display:block;width:48px;height:48px;flex:none;max-width:100%}
+.cxo-main-nav{display:flex;align-items:center;gap:24px;font-size:.84rem}
+.cxo-main-nav a{padding:10px 0;white-space:nowrap}.cxo-main-nav a:hover{color:#d6b9ec}
+.cxo-header-cta{justify-self:end;font-size:.82rem;font-weight:600;padding:.72rem 1rem;border:1px solid #ffffff80;border-radius:99px;white-space:nowrap}.cxo-header-cta span{margin-left:.65rem}
+.cxo-product-nav{display:flex;justify-content:flex-end;align-items:center;gap:28px;width:min(1180px,calc(100% - 64px));margin:auto;padding:16px 0;border-bottom:1px solid #323933;font-size:12px;font-family:"Open Sans",Arial,sans-serif;line-height:1.55}.cxo-product-nav a{color:#b8bcb5;text-decoration:none;padding:8px 0}.cxo-product-nav a:first-child{margin-right:auto}.cxo-product-nav a[aria-current]{color:var(--accent,#d6b9ec);border-bottom:2px solid currentColor}
+@media(max-width:1000px){.cxo-header-inner{grid-template-columns:1fr auto;gap:12px;padding:16px 0}.cxo-main-nav{grid-row:2;grid-column:1/-1;justify-content:space-between;gap:12px;font-size:.8rem}.cxo-home .hero{padding-top:180px}}
+@media(max-width:520px){.cxo-header-inner{width:calc(100% - 36px)}.cxo-wordmark{font-size:14px;gap:9px}.cxo-wordmark img{width:40px;height:40px}.cxo-header-cta{font-size:11px;padding:10px 12px}.cxo-header-cta span{margin-left:4px}.cxo-main-nav{font-size:11px;gap:8px}.cxo-product-nav{width:calc(100% - 36px);gap:16px;font-size:11px;flex-wrap:wrap}}
