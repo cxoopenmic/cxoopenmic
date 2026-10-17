@@ -118,3 +118,5 @@ details{break-inside:avoid}
 
 .radar{--accent:#9dc8ed}.radar .art{background:radial-gradient(circle,#9dc8ed10,transparent 65%)}.radar .paper .eyebrow{color:#315c7d}
 @media(max-width:520px){.header{flex-wrap:wrap;padding-top:16px;padding-bottom:12px;gap:8px}.header nav{width:100%;justify-content:space-between;gap:16px}.header nav a{padding:8px 0}.brand small{font-size:9px}}
+
+.contact{border-top:1px solid var(--line)}.review a{text-underline-offset:3px}.footer{flex-wrap:wrap}.footer a{display:inline-block;padding:4px 0}
