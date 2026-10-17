@@ -271,3 +271,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .hero-footer span{white-space:nowrap}
   .hero-footer span+span::before{content:none}
 }
+
+.openmic-centre{display:grid;grid-template-columns:1fr 1fr;gap:40px;border:1px solid #6b7768;background:#1c241e;padding:32px;margin-bottom:28px}
+.openmic-centre h3{font-size:clamp(26px,3vw,38px);line-height:1.15;margin:14px 0 18px}
+.openmic-centre p{color:#bdc5bd;line-height:1.7}
+.openmic-centre .product-stage{color:#c4d49b}
+.openmic-centre .text-link{display:inline-block;color:#faf7ef}
+@media(max-width:700px){.openmic-centre{grid-template-columns:1fr;gap:12px;padding:24px}}
