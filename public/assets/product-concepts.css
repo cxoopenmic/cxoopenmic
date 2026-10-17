@@ -129,3 +129,6 @@ details{break-inside:avoid}
 .example-path a:hover,.example-path a:focus-visible{outline:2px solid #536237;outline-offset:2px}
 .example-path span{font-size:12px}
 @media(max-width:520px){.example-path{grid-template-columns:1fr}.example-path a{flex-direction:row;justify-content:space-between;align-items:center;gap:12px;padding:12px}}
+
+.openmic-context{border-bottom:1px solid var(--line);padding-top:0}
+.openmic-context p{max-width:820px}
