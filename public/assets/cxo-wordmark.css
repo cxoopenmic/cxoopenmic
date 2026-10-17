@@ -8,9 +8,9 @@
 /* A simple product title and home logo on phone-sized screens. */
 .mobile-product-title{display:none}
 @media(max-width:680px){
- .header{display:grid;grid-template-columns:1fr auto;align-items:center;gap:8px 16px;padding-top:16px;padding-bottom:12px}
+ .header{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:8px 16px;padding-top:16px;padding-bottom:12px}
  .header .mobile-product-title{display:block;font-size:24px;font-weight:400;line-height:1.25;letter-spacing:-.03em}
- .header .brand{justify-self:end}
+ .header .brand{justify-self:start}
  .header .brand-name{display:none}
  .header .brand img{width:40px;height:40px}
  .header nav{grid-column:1/-1;display:flex;width:100%;justify-content:space-between;gap:16px}
