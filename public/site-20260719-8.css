@@ -279,9 +279,4 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .openmic-centre .text-link{display:inline-block;color:#faf7ef}
 @media(max-width:700px){.openmic-centre{grid-template-columns:1fr;gap:12px;padding:24px}}
 
-.encore-feature{display:flex;justify-content:space-between;align-items:center;gap:36px;margin-top:40px;border-top:1px solid #3b443c;padding:36px 0 0;text-decoration:none;--product-accent:#ceb3e8}
-.encore-feature h3{font-size:clamp(1.6rem,3vw,2.4rem);line-height:1.2;letter-spacing:-.04em;margin:16px 0}
-.encore-feature p{color:#bdc5bd;max-width:640px;margin:0}
-.encore-feature .product-link{flex-shrink:0;border:1px solid #3b443c;padding:16px 22px}
-.encore-feature:hover .product-link{border-color:#ceb3e8}
-@media(max-width:700px){.encore-feature{align-items:flex-start;flex-direction:column;gap:24px}}
+.group-title{font-size:clamp(1.6rem,3vw,2.2rem);letter-spacing:-.04em;margin:0 0 12px}.group-intro{color:#bdc5bd;margin:0 0 28px;max-width:760px}.intelligence-group{border-top:1px solid #3b443c;margin-top:48px;padding-top:40px}.experience-draft{--product-accent:#8ed8c3}.experience-main{--product-accent:#ffa143}.experience-encore{--product-accent:#ceb3e8}.experience-grid .product-card h4{font-size:2rem;letter-spacing:-.04em;margin:24px 0 18px}.experience-grid .product-link{display:block;text-decoration:none}.experience-main:hover{transform:none}#main-event{scroll-margin-top:110px}

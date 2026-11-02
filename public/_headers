@@ -53,3 +53,6 @@
 
 /encore/*
   Cache-Control: public, max-age=0, must-revalidate
+
+/draft-nights/*
+  Cache-Control: public, max-age=0, must-revalidate
