@@ -56,3 +56,6 @@
 
 /draft-nights/*
   Cache-Control: public, max-age=0, must-revalidate
+
+/open-mic-night/*
+  Cache-Control: public, max-age=0, must-revalidate
