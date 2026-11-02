@@ -143,3 +143,10 @@ details{break-inside:avoid}
 .draft-nights{--accent:#8ed8c3}.draft-nights .art{background:radial-gradient(circle,#8ed8c310,transparent 65%)}.draft-nights .paper .eyebrow{color:#285f50}.draft-nights .hero h1{font-size:clamp(54px,6.3vw,86px)}
 
 .open-mic-night{--accent:#ffa143}.open-mic-night .hero h1{font-size:clamp(54px,6.3vw,86px)}
+
+/* Give the two-line title clear word and line separation. */
+.open-mic-night .hero h1{line-height:1.14;letter-spacing:-.025em;word-spacing:.06em}
+.open-mic-night .title-line{display:block}
+.open-mic-night .title-line + .title-line{margin-top:.06em}
+.open-mic-night .classic-mic-art{background:none;overflow:visible}
+.open-mic-night .classic-mic-art img{display:block;width:92%;height:auto;aspect-ratio:1;border-radius:50%}
