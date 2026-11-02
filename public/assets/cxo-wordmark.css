@@ -16,3 +16,7 @@
 }
 
 @media(max-width:380px){.header{column-gap:10px}.header nav{gap:8px;font-size:11px}}
+
+.draft-nights .cxo-footer .wordmark{font-weight:400}
+@media(max-width:680px){.header nav{display:grid;grid-template-columns:repeat(3,max-content);justify-content:end;gap:0 14px}.header nav a{font-size:11px;white-space:nowrap}}
+@media(max-width:380px){.header nav{column-gap:10px}}

@@ -139,3 +139,5 @@ details{break-inside:avoid}
 .encore .paper .eyebrow{color:#684180}
 .encore-path{grid-template-columns:repeat(3,minmax(0,1fr))}
 @media(max-width:800px){.encore-path{grid-template-columns:1fr}.encore-path div:after{display:none}}
+
+.draft-nights{--accent:#8ed8c3}.draft-nights .art{background:radial-gradient(circle,#8ed8c310,transparent 65%)}.draft-nights .paper .eyebrow{color:#285f50}.draft-nights .hero h1{font-size:clamp(54px,6.3vw,86px)}
