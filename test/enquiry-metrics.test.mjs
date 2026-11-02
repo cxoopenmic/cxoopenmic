@@ -12,7 +12,7 @@ test('counts a visible page once and only contact/sponsorship links',()=>{
 });
 test('privacy preferences suppress events',()=>{assert.equal(run({doNotTrack:'1'}).calls.length,0);assert.equal(run({globalPrivacyControl:true}).calls.length,0);});
 test('every public conversation link has page attribution and the tracking script',()=>{
- for(const [page,key] of [['index.html','home'],['radar/index.html','radar'],['amplify/index.html','amplify'],['resonance/index.html','resonance']]){
+ for(const [page,key] of [['index.html','home'],['radar/index.html','radar'],['amplify/index.html','amplify'],['resonance/index.html','resonance'],['encore/index.html','encore']]){
  const html=fs.readFileSync(new URL('../public/'+page,import.meta.url),'utf8');assert.match(html,/src="\/assets\/enquiry-metrics.js"/);
  const links=[...html.matchAll(/href="(\/(?:contact|sponsorship)[^"]*)"/g)];assert.ok(links.length);for(const [,link] of links)assert.match(link,new RegExp('from='+key+'$'));
  }

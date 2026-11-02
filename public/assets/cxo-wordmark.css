@@ -3,7 +3,7 @@
 .header .brand img{display:block;width:48px;height:48px;max-width:100%;flex:none;border-radius:0;object-fit:contain}
 
 /* Product footer wordmark uses the same regular weight. */
-.radar .cxo-footer .wordmark,.amplify .cxo-footer .wordmark,.resonance .cxo-footer .wordmark{font-weight:400}
+.radar .cxo-footer .wordmark,.amplify .cxo-footer .wordmark,.resonance .cxo-footer .wordmark,.encore .cxo-footer .wordmark{font-weight:400}
 
 /* Keep the home logo and product navigation together on mobile. */
 @media(max-width:680px){
@@ -14,3 +14,5 @@
  .header nav{display:flex;min-width:0;width:100%;justify-content:space-between;gap:12px}
  .header nav a{padding:8px 0}
 }
+
+@media(max-width:380px){.header{column-gap:10px}.header nav{gap:8px;font-size:11px}}
